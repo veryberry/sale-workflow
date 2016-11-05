@@ -50,7 +50,7 @@
                   <field name="context">{'active_test': False}</field>
               </record>
 
-        <menuitem action="action_sale_test_tree" id="menu_sale_test" parent="base.menu_sale_general_settings" />
+        <menuitem action="action_sale_test_tree" id="menu_sale_test" parent="sale.menu_sales_config" />
 
 
         <record id="view_order_form" model="ir.ui.view">
@@ -106,10 +106,10 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_sales_order_filter" />
             <field name="arch" type="xml">
-                <filter name="sales" position="after">
-                    <separator orientation="vertical"/>
+                <xpath expr="//filter[@name='my_sale_orders_filter']" position="after">
+                    <separator/>
                     <filter icon="terp-emblem-important" name="tofix" string="Blocked in draft" domain="[('main_exception_id','!=',False)]"/>
-                </filter>
+                </xpath>
             </field>
         </record>
 

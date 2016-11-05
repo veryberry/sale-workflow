@@ -111,6 +111,6 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem action="act_sale_workflow_process_form" id="menu_act_sale_workflow_process_form" parent="base.menu_sale_general_settings" sequence="20"/>
+        <menuitem action="act_sale_workflow_process_form" id="menu_act_sale_workflow_process_form" parent="sale.menu_sales_config" sequence="20"/>
 
 </odoo>

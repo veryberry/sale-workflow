@@ -17,5 +17,5 @@
      'views/sale_view.xml',
  ],
  'images': [],
- 'installable': False,
+ 'installable': True,
  }
